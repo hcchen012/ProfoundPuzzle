@@ -80,7 +80,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.wrongAns.swapAt(start.item, end.item)
             self.undoMovesArray.removeLast()
             self.numberOfMoves += 1
-            self.numMoves.text = "Moves: \(self.numberOfMoves)"
+            self.numMoves.text = "Number of Moves: \(self.numberOfMoves)"
         }
     }
     
@@ -93,7 +93,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         firstIndexPath = nil
         secondIndexPath = nil
         self.numberOfMoves = 0
-        self.numMoves.text = "Moves: \(numberOfMoves)"
+        self.numMoves.text = "Number of Moves: \(numberOfMoves)"
         self.myCollectionView.reloadData()
     }
     
