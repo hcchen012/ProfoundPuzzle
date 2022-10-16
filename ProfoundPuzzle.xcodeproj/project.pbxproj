@@ -13,6 +13,7 @@
 		BB63C06628FB5E1000DAE925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB63C06528FB5E1000DAE925 /* Assets.xcassets */; };
 		BB63C06928FB5E1000DAE925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB63C06728FB5E1000DAE925 /* LaunchScreen.storyboard */; };
 		BB63C07928FB8C9500DAE925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB63C07828FB8C9500DAE925 /* Main.storyboard */; };
+		BB63C07B28FB8F2A00DAE925 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB63C07A28FB8F2A00DAE925 /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BB63C06828FB5E1000DAE925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB63C06A28FB5E1000DAE925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB63C07828FB8C9500DAE925 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BB63C07A28FB8F2A00DAE925 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BB63C05C28FB5E0B00DAE925 /* AppDelegate.swift */,
 				BB63C05E28FB5E0B00DAE925 /* SceneDelegate.swift */,
 				BB63C06028FB5E0B00DAE925 /* ViewController.swift */,
+				BB63C07A28FB8F2A00DAE925 /* ImageCollectionViewCell.swift */,
 				BB63C07828FB8C9500DAE925 /* Main.storyboard */,
 				BB63C06528FB5E1000DAE925 /* Assets.xcassets */,
 				BB63C06728FB5E1000DAE925 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				BB63C06128FB5E0B00DAE925 /* ViewController.swift in Sources */,
 				BB63C05D28FB5E0B00DAE925 /* AppDelegate.swift in Sources */,
+				BB63C07B28FB8F2A00DAE925 /* ImageCollectionViewCell.swift in Sources */,
 				BB63C05F28FB5E0B00DAE925 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
