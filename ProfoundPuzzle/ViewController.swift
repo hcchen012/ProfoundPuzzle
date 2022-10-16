@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     let questionImageArray = [#imageLiteral(resourceName: "layer1"), #imageLiteral(resourceName: "layer2"), #imageLiteral(resourceName: "layer3"), #imageLiteral(resourceName: "layer4"), #imageLiteral(resourceName: "layer5"), #imageLiteral(resourceName: "layer6"), #imageLiteral(resourceName: "layer7"), #imageLiteral(resourceName: "layer8"), #imageLiteral(resourceName: "layer9")]
-    let correctAns = [1,2,3,4,5,6,7,8,9]
+    let correctAns = [0,1,2,3,4,5,6,7,8]
     var wrongAns = Array(0..<9)
     var wrongImageArray=[UIImage]()
     var undoMovesArray = [(first: IndexPath, second: IndexPath)]()
@@ -32,6 +32,35 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         wrongImageArray = questionImageArray
         setupViews()
+        let temp0 = wrongImageArray[2]
+        let temp1 = wrongImageArray[1]
+        let temp2 = wrongImageArray[0]
+        let temp3 = wrongImageArray[6]
+        let temp4 = wrongImageArray[5]
+        let temp5 = wrongImageArray[7]
+        let temp6 = wrongImageArray[8]
+        let temp7 = wrongImageArray[4]
+        let temp8 = wrongImageArray[3]
+        wrongImageArray[0] = temp0
+        wrongImageArray[1] = temp1
+        wrongImageArray[2] = temp2
+        wrongImageArray[3] = temp3
+        wrongImageArray[4] = temp4
+        wrongImageArray[5] = temp5
+        wrongImageArray[6] = temp6
+        wrongImageArray[7] = temp7
+        wrongImageArray[8] = temp8
+        wrongAns[0] = 2
+        wrongAns[1] = 1
+        wrongAns[2] = 0
+        wrongAns[3] = 6
+        wrongAns[4] = 5
+        wrongAns[5] = 7
+        wrongAns[6] = 8
+        wrongAns[7] = 4
+        wrongAns[8] = 3
+        
+        
     }
     
     
@@ -52,6 +81,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.undoMovesArray.append((first: start, second: end))
             self.numberOfMoves += 1
             self.numMoves.text = "Number of Moves: \(self.numberOfMoves)"
+            print(self.wrongAns)
             if self.wrongAns == self.correctAns {
                 let alert=UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
